@@ -1,0 +1,18 @@
+apiVersion: infrastructure.omni.sidero.dev/v1alpha1
+kind: MachineClass
+metadata:
+  name: sakuracloud-worker
+spec:
+  type: auto-provision
+  provider: sakuracloud
+  config:
+    zone: tk1b
+    cpu: 4
+    memory_gib: 8
+    boot_disk_gib: 100
+    external_network_id: REPLACE_ME
+    internal_switch_id: REPLACE_ME
+    packet_filter_id: REPLACE_ME
+    external_ip_pool: 192.0.2.16-192.0.2.31
+    internal_ip_pool: 192.168.100.128-192.168.100.191
+    gateway: 192.0.2.1

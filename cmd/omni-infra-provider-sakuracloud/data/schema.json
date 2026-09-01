@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "zone": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Sakura Cloud zone, for example tk1b"
+    },
+    "cpu": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of virtual CPU cores"
+    },
+    "memory_gib": {
+      "type": "integer",
+      "minimum": 2,
+      "description": "Memory in GiB"
+    },
+    "boot_disk_gib": {
+      "type": "integer",
+      "minimum": 20,
+      "description": "Ephemeral Talos boot disk size in GiB"
+    },
+    "external_network_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Existing router + switch ID for eth0"
+    },
+    "internal_switch_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Existing internal switch ID for eth1"
+    },
+    "packet_filter_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Worker packet filter ID"
+    },
+    "external_ip_pool": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Provider-managed external IPv4 pool in CIDR or range form"
+    },
+    "internal_ip_pool": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Provider-managed internal IPv4 pool in CIDR or range form"
+    },
+    "gateway": {
+      "type": "string",
+      "format": "ipv4",
+      "description": "External IPv4 gateway"
+    }
+  },
+  "required": [
+    "zone",
+    "cpu",
+    "memory_gib",
+    "boot_disk_gib",
+    "external_network_id",
+    "internal_switch_id",
+    "packet_filter_id",
+    "external_ip_pool",
+    "internal_ip_pool",
+    "gateway"
+  ]
+}
