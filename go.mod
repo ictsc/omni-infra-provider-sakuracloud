@@ -4,10 +4,12 @@ go 1.27.0
 
 require (
 	github.com/cosi-project/runtime v1.16.0
+	github.com/sacloud/iaas-api-go v1.29.3
+	github.com/sacloud/iaas-service-go v1.25.2
 	github.com/siderolabs/omni/client v1.8.0
-	github.com/spf13/cobra v1.10.2
 	go.uber.org/zap v1.28.0
 	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
@@ -17,6 +19,7 @@ require (
 	github.com/ProtonMail/gopenpgp/v2 v2.10.0 // indirect
 	github.com/adrg/xdg v0.5.3 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
+	github.com/benbjohnson/clock v1.3.0 // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/cloudflare/circl v1.6.3 // indirect
@@ -25,7 +28,9 @@ require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.13.0 // indirect
+	github.com/fatih/structs v1.1.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.1 // indirect
+	github.com/gabriel-vasile/mimetype v1.4.13 // indirect
 	github.com/gertd/go-pluralize v0.2.1 // indirect
 	github.com/go-errors/errors v1.5.1 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
@@ -43,22 +48,31 @@ require (
 	github.com/go-openapi/swag/stringutils v0.25.5 // indirect
 	github.com/go-openapi/swag/typeutils v0.25.5 // indirect
 	github.com/go-openapi/swag/yamlutils v0.25.5 // indirect
+	github.com/go-playground/locales v0.14.1 // indirect
+	github.com/go-playground/universal-translator v0.18.1 // indirect
+	github.com/go-playground/validator/v10 v10.30.2 // indirect
+	github.com/gofrs/flock v0.13.0 // indirect
+	github.com/golang-jwt/jwt/v5 v5.3.1 // indirect
 	github.com/google/cel-go v0.28.0 // indirect
 	github.com/google/gnostic-models v0.7.1 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
+	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
-	github.com/inconshreveable/mousetrap v1.1.0 // indirect
+	github.com/hashicorp/go-retryablehttp v0.7.8 // indirect
+	github.com/jlaffaye/ftp v0.2.0 // indirect
 	github.com/jsimonetti/rtnetlink/v2 v2.2.1-0.20260317095713-310581b9c6ac // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/jxskiss/base62 v1.1.0 // indirect
 	github.com/klauspost/compress v1.18.6 // indirect
+	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mdlayher/ethtool v0.6.0 // indirect
 	github.com/mdlayher/genetlink v1.4.0 // indirect
 	github.com/mdlayher/netlink v1.11.0 // indirect
 	github.com/mdlayher/socket v0.6.0 // indirect
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect
 	github.com/monochromegane/go-gitignore v0.0.0-20200626010858-205db1a8cc00 // indirect
@@ -69,6 +83,10 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/planetscale/vtprotobuf v0.6.1-0.20250313105119-ba97887b0a25 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
+	github.com/sacloud/api-client-go v0.3.5 // indirect
+	github.com/sacloud/go-http v0.1.9 // indirect
+	github.com/sacloud/packages-go v0.1.0 // indirect
+	github.com/sacloud/saclient-go v0.4.0 // indirect
 	github.com/sasha-s/go-deadlock v0.3.9 // indirect
 	github.com/siderolabs/crypto v0.6.5 // indirect
 	github.com/siderolabs/gen v0.8.6 // indirect
@@ -80,22 +98,22 @@ require (
 	github.com/siderolabs/protoenc v0.2.4 // indirect
 	github.com/siderolabs/siderolink v0.3.16 // indirect
 	github.com/siderolabs/talos/pkg/machinery v1.13.2 // indirect
-	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/xlab/treeprint v1.2.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
+	go.uber.org/ratelimit v0.3.1 // indirect
 	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	go.yaml.in/yaml/v4 v4.0.0-rc.4 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
-	golang.org/x/crypto v0.51.0 // indirect
+	golang.org/x/crypto v0.53.0 // indirect
 	golang.org/x/exp v0.0.0-20260410095643-746e56fc9e2f // indirect
 	golang.org/x/net v0.55.0 // indirect
 	golang.org/x/oauth2 v0.36.0 // indirect
-	golang.org/x/sync v0.20.0 // indirect
-	golang.org/x/sys v0.45.0 // indirect
-	golang.org/x/term v0.43.0 // indirect
-	golang.org/x/text v0.37.0 // indirect
+	golang.org/x/sync v0.21.0 // indirect
+	golang.org/x/sys v0.46.0 // indirect
+	golang.org/x/term v0.44.0 // indirect
+	golang.org/x/text v0.38.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
 	golang.zx2c4.com/wintun v0.0.0-20230126152724-0fa3db229ce2 // indirect
 	golang.zx2c4.com/wireguard v0.0.0-20250521234502-f333402bd9cb // indirect
